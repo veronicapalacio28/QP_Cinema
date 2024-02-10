@@ -1,0 +1,71 @@
+<h1>Administrar productos</h1>
+<section class="movies-list">
+  <h2>Listado de películas</h2>
+  <div class="table-wrapper">
+    <table class="movie-table">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Género</th>
+          <th>Sinopsis</th>
+          <th>Imagen promocional</th>
+          <th>Formato</th>
+          <th>Duración</th>
+          <th>Valor de la boleta</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of movies">
+          <td>{{ movie.titulo }}</td>
+          <td>{{ getGenreName(movie.id_genero) }}</td>
+          <td>{{ movie.sinopsis }}</td>
+          <td><img [src]="movie.img_promocional" alt="Imagen promocional" style="max-width: 100px;"></td>
+          <td>{{ movie.formato }}</td>
+          <td>{{ movie.duracion }} min</td>
+          <td>{{ movie.precio }}.000$</td>
+          <td>
+            <button>Editar película</button>
+            <button>Eliminar película</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<section class="add-movie">
+  <h2>Añadir película</h2>
+</section>
+<section class="reserves-list">
+  <h2>Listado de reservas</h2>
+  <div class="table-wrapper">
+    <table class="movie-table">
+      <thead>
+        <tr>
+          <th id="user">Id Usuario</th>
+          <th>Película</th>
+          <th>Sala</th>
+          <th>Silla</th>
+          <th>Cantidad boletas</th>
+          <th>Valor total</th>
+          <th>ID reserva</th>
+          <th>Estado reserva</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of bookings">
+          <td>{{ booking.FK_identificacion }}</td>
+          <td>{{ getMovieTitle(booking.FK_idpelicula) }}</td>
+          <td>{{ booking.nombre_sala }}</td>
+          <td>{{ booking.nombre_silla }}</td>
+          <td>{{ booking.cantidad }}</td>
+          <td>{{ calculateTotalValue(booking) }}.000$</td>
+          <td>{{ booking.id_reserva }}</td>
+          <td>{{ getStatusLabel(booking.estado) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

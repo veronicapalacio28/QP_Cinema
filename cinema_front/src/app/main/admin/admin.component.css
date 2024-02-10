@@ -1,0 +1,19 @@
+
+.table-wrapper{
+margin: auto 5%;
+}
+.movie-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.movie-table th, .movie-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+.movie-table th {
+  background-color: #f2f2f2;
+}
+

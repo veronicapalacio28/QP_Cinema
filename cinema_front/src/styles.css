@@ -1,0 +1,56 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 3.5em;
+  margin-top: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+
+.custom-snackbar {
+  font-size: 1.2rem;
+}
+
+
+.login-body-class {
+  background-image: url(./assets/imgs/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.register-body-class {
+  background-image: url(./assets/imgs/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}

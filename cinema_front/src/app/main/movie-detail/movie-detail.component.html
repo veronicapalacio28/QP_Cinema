@@ -1,0 +1,18 @@
+<h1>{{movieDetails.titulo}}</h1>
+<section class="movie-details">
+  <img [src]="movieDetails.img_promocional" alt="{{ movieDetails.titulo }} Poster">
+  <div class="movie-info">
+    <h3>Sinopsis:</h3>
+    <p>{{movieDetails.sinopsis}}</p>
+    <br>
+    <p><strong>Género: </strong>{{ getGenreName(movieDetails.id_genero) }}</p>
+    <br>
+    <p><strong>Duración: </strong>{{movieDetails.duracion}} minutos</p>
+    <br>
+    <p><strong>Formato: </strong>{{movieDetails.formato}}</p>
+    <br>
+    <p><strong>Precio: </strong>{{movieDetails.precio}}.000$</p>
+    <br>
+    <p><strong>Horarios: </strong>{{movieDetails.horario}}</p>
+  </div>
+</section>

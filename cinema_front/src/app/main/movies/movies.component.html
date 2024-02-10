@@ -1,0 +1,11 @@
+<h1>Cartelera</h1>
+<section id="bill" class="billboard">
+  <div class="container" *ngFor="let movie of movies">
+    <button (click)="movieDetail(movie.id)"><img [src]="movie.img_promocional" alt="{{ movie.titulo }} Poster"></button>
+    <div class="movie-info">
+      <h3>{{ movie.titulo }}</h3>
+      <p><strong>Género: </strong>{{ getGenreName(movie.id_genero) }}</p>
+      <p><strong>Duración: </strong>{{ movie.duracion }} minutos</p>
+    </div>
+  </div>
+</section>

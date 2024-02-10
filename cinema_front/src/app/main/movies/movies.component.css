@@ -1,0 +1,30 @@
+.billboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.billboard .container {
+  margin: 10px;
+  max-width: 400px;
+  border-radius: 20px;
+  border: solid;
+  flex: 1;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+.billboard .movie-info{
+  margin: 10px;
+}
+.billboard h3 {
+  text-align: center;
+}
+.billboard img,button {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  cursor: pointer;
+}

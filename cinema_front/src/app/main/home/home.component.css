@@ -1,0 +1,82 @@
+.hero{
+  margin: 100px auto ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 1600px;
+
+}
+.hero img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.container img {
+    height: 60px;
+    width: 150px;
+}
+
+
+
+
+h2{
+  margin-top: 10px;
+}
+/* billboard */
+.billboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.billboard .container {
+    margin: 10px;
+    max-width: 400px;
+    border-radius: 20px;
+    border: solid;
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.billboard .movie-info{
+    margin: 10px;
+}
+
+
+
+.billboard h3 {
+    text-align: center;
+}
+
+.billboard img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.booking{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+h2{
+  text-align: center;
+}

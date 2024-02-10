@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <div class="container">
+    <img (click)="navegar('cinema/home')" src="../../../assets/imgs/logo_QP.jpg" alt="logo QP" style="height: 50px;">
+
+    <div class="navigation-buttons">
+      <button mat-button (click)="navegar('cinema/movies')">Cartelera</button>
+      <button mat-button (click)="navegar('/cinema/reserves')">Reservas</button>
+      <button *ngIf="role=='2'" mat-button (click)="navegar('/cinema/admin')">Administrar productos</button>
+    </div>
+
+    <div class="right-buttons">
+      <button class="profile" mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+        <h3>{{name}}</h3>
+      </button>
+      <button mat-button (click)="cerrarSesion()">
+        <mat-icon>exit_to_app</mat-icon>
+        Salir
+      </button>
+    </div>
+  </div>
+</mat-toolbar>

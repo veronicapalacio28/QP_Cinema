@@ -1,0 +1,79 @@
+<section class="register">
+  <div class="register-login">
+    <div>
+      <h3>¿Ya tienes una cuenta?</h3>
+      <p>Inicia sesión para comenzar a disfrutar</p>
+      <button mat-button (click)="redirigirALogin()">Iniciar Sesión</button>
+    </div>
+  </div>
+
+  <div class="register-register">
+    <form [formGroup]="registerForm" (ngSubmit)="registrarUsuario()">
+      <h2>Regístrate</h2>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" placeholder="Nombre">
+        <mat-error *ngIf="registerForm.get('nombre')?.invalid && registerForm.get('nombre')?.touched">
+          Nombre es requerido.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Apellido</mat-label>
+        <input matInput formControlName="apellido" placeholder="Apellido">
+        <mat-error *ngIf="registerForm.get('apellido')?.invalid && registerForm.get('apellido')?.touched">
+          Apellido es requerido.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Tipo de Documento</mat-label>
+        <mat-select formControlName="FK_idtipo">
+          <mat-option value="1">Cedula de ciudadanía</mat-option>
+          <mat-option value="2">Tarjeta de identidad</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Correo</mat-label>
+        <input matInput formControlName="correo" placeholder="Correo">
+        <mat-error *ngIf="registerForm.get('correo')?.invalid && registerForm.get('correo')?.touched">
+          Correo es requerido y debe ser válido.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Identificación</mat-label>
+        <input matInput formControlName="identificacion" placeholder="Identificación">
+        <mat-error *ngIf="registerForm.get('identificacion')?.invalid && registerForm.get('identificacion')?.touched">
+          Identificación es requerida.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput formControlName="contrasena" type="password" placeholder="Contraseña">
+        <mat-error *ngIf="registerForm.get('contrasena')?.invalid && registerForm.get('contrasena')?.touched">
+          Contraseña es requerida y debe tener al menos 6 caracteres.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Confirmar Contraseña</mat-label>
+        <input matInput formControlName="confirmar_contrasena" type="password" placeholder="Confirmar Contraseña">
+        <mat-error
+          *ngIf="registerForm.get('confirmar_contrasena')?.invalid && registerForm.get('confirmar_contrasena')?.touched">
+          Debes confirmar la contraseña.
+        </mat-error>
+        <mat-error *ngIf="registerForm.errors?.['notSame']">
+          Las contraseñas no coinciden.
+        </mat-error>
+      </mat-form-field>
+
+      <div class="form-group">
+        <button mat-raised-button color="primary" type="submit">Registrarse</button>
+      </div>
+    </form>
+  </div>
+</section>
