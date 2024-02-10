@@ -24,7 +24,7 @@ export class RegisterComponent {
       apellido: ['', Validators.required],
       FK_idtipo: ['', Validators.required],
       correo: ['', [Validators.required, Validators.pattern(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)]],
-      identificacion: ['', Validators.required, Validators.pattern(/.{8,12}/)],
+      identificacion: ['', Validators.required],
       contrasena: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(25), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$/)]],
       confirmar_contrasena: ['', Validators.required]
     }, { validator: this.checkPasswords });
