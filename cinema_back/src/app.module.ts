@@ -18,7 +18,7 @@ import { Booking } from './bookings/entities/booking.entity';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: '',
+      password: 'santi1896',
       database: 'quality',
       entities: [UserEntity, TipoDocumento, MovieEntity, Booking],
       synchronize: true,

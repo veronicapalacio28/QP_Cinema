@@ -1,7 +1,6 @@
-import { Component,OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -9,23 +8,14 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
-export class AdminComponent   implements OnInit{
+export class AdminComponent implements OnInit {
   movies: any[] = [];
   bookings: any[] = [];
-  nuevaPelicula: any = {
-    titulo: '',
-    genero: '',
-    sinopsis: '',
-    imagen: '',
-    formato: '',
-    duracion: '',
-    valor: ''
-  };
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
   ngOnInit(): void {
     this.http.get<any[]>('http://localhost:3000/movies').subscribe(
       (data) => {
-        this.movies =  data;
+        this.movies = data;
       },
       (error) => {
         console.error('Error al obtener datos:', error);
@@ -33,7 +23,6 @@ export class AdminComponent   implements OnInit{
     );
     this.http.get<any[]>('http://localhost:3000/bookings').subscribe(
       (bookingsData) => {
-        // Iterar sobre cada reserva y cambiar el nombre de la sala según el ID
         this.bookings = bookingsData.map(booking => {
           switch (booking.FK_idsala) {
             case 1:
@@ -54,13 +43,12 @@ export class AdminComponent   implements OnInit{
             case 6:
               booking.nombre_sala = 'Sala 6';
               break;
-            // Agrega más casos según sea necesario
             default:
               booking.nombre_sala = 'Sala Desconocida';
               break;
           }
-          const row = String.fromCharCode(65 + Math.floor((booking.id_silla - 1) / 4)); // Convertir el número de silla en fila (A, B, C, ...)
-          const column = (booking.id_silla - 1) % 4 + 1; // Calcular la columna (1, 2, 3, 4)
+          const row = String.fromCharCode(65 + Math.floor((booking.id_silla - 1) / 4));
+          const column = (booking.id_silla - 1) % 4 + 1;
           booking.nombre_silla = row + column;
           return booking;
         });
@@ -70,7 +58,6 @@ export class AdminComponent   implements OnInit{
       }
     );
   }
-
   getGenreName(idGenero: number): string {
     switch (idGenero) {
       case 1:
@@ -108,5 +95,28 @@ export class AdminComponent   implements OnInit{
   }
   getStatusLabel(status: number): string {
     return status === 0 ? 'Activa' : 'Cancelada';
+  }
+  enviarPelicula(event: Event) {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const newMovie = {
+      titulo: (form.querySelector('input[name="titulo"]') as HTMLInputElement).value,
+      sinopsis: (form.querySelector('textarea[name="sinopsis"]') as HTMLTextAreaElement).value,
+      formato: (document.getElementById('formato') as HTMLSelectElement).value,
+      duracion: parseInt((form.querySelector('input[name="duracion"]') as HTMLInputElement).value),
+      img_promocional: (form.querySelector('input[name="img_promocional"]') as HTMLInputElement).value,
+      precio: parseFloat((form.querySelector('input[name="precio"]') as HTMLInputElement).value),
+      horario: (form.querySelector('input[name="horario"]') as HTMLInputElement).value,
+      id_genero: parseInt((document.getElementById('genero') as HTMLSelectElement).value)
+    };
+    this.http.post('http://localhost:3000/movies', newMovie)
+      .subscribe(
+        (response) => {
+          console.log('Película enviada con éxito:', response);
+        },
+        (error) => {
+          console.error('Error al enviar la película:', error);
+        }
+      );
   }
 }

@@ -33,10 +33,53 @@
     </table>
   </div>
 </section>
-
-
 <section class="add-movie">
   <h2>Añadir película</h2>
+  <form #movieForm (submit)="enviarPelicula($event)">
+    <div> <label>Título:</label>
+      <input type="text" name="titulo" required>
+    </div>
+    <div> <label>Sinopsis</label>
+      <textarea name="sinopsis" required></textarea>
+    </div>
+    <div>
+      <label for="formato">Formato:</label>
+      <select id="formato" name="formato" required>
+        <option value="2D">2D</option>
+        <option value="3D">3D</option>
+      </select>
+    </div>
+
+    <div> <label>Duración</label>
+      <input type="number" name="duracion" required>
+    </div>
+    <div> <label>Imagen promocional</label>
+      <input type="text" name="img_promocional" required>
+    </div>
+    <div> <label>Precio</label>
+      <input type="number" name="precio" required>
+    </div>
+    <div>
+      <label>Horario</label>
+      <input type="text" name="horario">
+    </div>
+    <div>
+      <label for="genero">Género</label>
+      <select id="genero" name="id_genero" required>
+        <option value="1">Accion</option>
+        <option value="2">Aventura</option>
+        <option value="3">Comedia</option>
+        <option value="4">Ciencia Ficcion</option>
+        <option value="5">Animacion</option>
+        <option value="6">Drama</option>
+        <option value="7">Documentales</option>
+        <option value="8">Fantasia</option>
+        <option value="9">Terror</option>
+      </select>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
 </section>
 <section class="reserves-list">
   <h2>Listado de reservas</h2>
