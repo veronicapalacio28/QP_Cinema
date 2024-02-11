@@ -2,6 +2,15 @@
 
 ## Pasos para correr el proyecto
 <ol>
+  <li>
+  Abrir el archivo app.module.ts 
+    <ul>
+      <li>Buscar la ruta cinema_back/src/app.module.ts y abrir el archivo.</li>
+      <li>Buscar la línea <i>username: 'root'</i> y cambiar root por tu usuario.</li>
+      <li>Buscar la línea <i>password: 'contraseña'</i> y cambiar contraseña por tu contraseña, si no tienes deja vacío el campo.</li>
+      <li>Buscar la línea <i>database: 'quality'</i> y cambiar quality por el nombre de la base de datos.</li>
+    </ul>
+  </li>
   <li>Para correr el front.
     <p>En consola:</p>
     <ul>
@@ -17,15 +26,6 @@
       <li>npm run start:dev</li>
     </ul>
   </li>
-  <li>
-  Abrir el archivo app.module.ts 
-    <ul>
-      <li>Buscar la ruta cinema_back/src/app.module.ts y abrir el archivo.</li>
-      <li>Buscar la línea <i>username: 'root'</i> y cambiar root por tu usuario.</li>
-      <li>Buscar la línea <i>password: 'contraseña'</i> y cambiar contraseña por tu contraseña, si no tienes deja vacío el campo.</li>
-      <li>Buscar la línea <i>database: 'quality'</i> y cambiar quality por el nombre de la base de datos.</li>
-    </ul>
-  </li>
 </ol>
 
 ## Credenciales para iniciar sesión como administrador
@@ -34,11 +34,11 @@
   <li>Contraseña: Vero_12345</li>
 </ul>
 
-## Para descartar cambios para subir al GitHub
+## Descartar cambios locales
 <ul>
-<li>git reset</li>
-<li>git checkout -- .</li>
-<li>git clean -fd</li>
+  <li>git reset</li>
+  <li>git checkout -- .</li>
+  <li>git clean -fd</li>
 </ul>
 
 
@@ -90,13 +90,13 @@
 
 <p>Al ingresar a la funcionalidad "Administrar productos" se abrirá una pantalla que presente una tabla con la lista de todas las películas que se encuentran creados en el sistema y un botón "Adicionar película", la tabla deberá tener los siguientes campos:</p>
 
-- [ ] Título
-- [ ] Género
-- [ ] Sinópsis
-- [ ] Imagen promocional
-- [ ] Formato (3D o 2D)
-- [ ] Duración
-- [ ] Valor de la boleta
+- [x] Título
+- [x] Género
+- [x] Sinópsis
+- [x] Imagen promocional
+- [x] Formato (3D o 2D)
+- [x] Duración
+- [x] Valor de la boleta
 - [ ] Un botón "Editar película".
 - [ ] Un botón "Eliminar película"
 

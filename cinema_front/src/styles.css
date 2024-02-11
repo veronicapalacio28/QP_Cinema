@@ -4,16 +4,17 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Lato';
 }
 h1 {
-  font-size: 3.5em;
+  font-size: 36px;
   margin-top: 100px;
   text-align: center;
+  color: #08090A;
 }
 
 h2 {
-  font-size: 2.7em;
+  font-size: 30px;
 }
 
 h3 {
@@ -38,6 +39,9 @@ li {
   font-size: 1.2rem;
 }
 
+body{
+  background-color: #F4F7F5;
+}
 
 .login-body-class {
   background-image: url(./assets/imgs/fondo.jpg);
@@ -54,3 +58,12 @@ li {
   background-position: center;
   background-attachment: fixed;
 }
+
+
+
+
+
+
+
+
+

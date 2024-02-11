@@ -4,27 +4,36 @@
   justify-content: space-around;
   align-items: stretch;
 }
+
 .billboard .container {
   margin: 10px;
   max-width: 400px;
-  border-radius: 20px;
-  border: solid;
+  border: solid 2px #08090A;
   flex: 1;
-  background-color: #FFFFFF;
   padding: 20px;
 }
-.billboard .movie-info{
+
+.billboard .movie-info {
   margin: 10px;
 }
+
 .billboard h3 {
-  text-align: center;
+  text-align: left;
+  font-size: 18px;
+  color: #222823;
 }
-.billboard img,button {
+
+.billboard p {
+  color: #575A5E;
+  font-size: 16px;
+}
+
+.billboard img,
+button {
   display: block;
   margin: auto;
   max-width: 300px;
   width: 300px;
   height: 450px;
-  border-radius: 20px;
   cursor: pointer;
 }
