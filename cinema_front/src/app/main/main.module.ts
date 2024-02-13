@@ -9,21 +9,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MoviesComponent } from './movies/movies.component';
-import { ReservesComponent } from './reserves/reserves.component';
+import { BookingsComponent } from './bookings/bookings.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { AdminComponent } from './admin/admin.component';
-
 const routes: Routes = [
-  { path: '', component: CinemaComponent, children: [
-    {path: 'home', component: HomeComponent},
-    {path: 'movies', component: MoviesComponent},
-    {path: 'movies/:id', component: MovieDetailComponent},
-    {path: 'reserves', component: ReservesComponent},
-    {path: 'admin', component: AdminComponent},
+  {
+    path: '', component: CinemaComponent, children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'movies', component: MoviesComponent },
+      { path: 'movies/:id', component: MovieDetailComponent },
+      { path: 'bookings', component: BookingsComponent },
+      { path: 'admin', component: AdminComponent },
 
-  ]},
+    ]
+  },
 ];
-
 @NgModule({
   declarations: [],
   imports: [

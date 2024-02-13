@@ -19,7 +19,7 @@
         <tr *ngFor="let movie of movies">
           <td>{{ movie.titulo }}</td>
           <td>{{ getGenreName(movie.id_genero) }}</td>
-          <td>{{ movie.sinopsis }}</td>
+          <td class="sinopsis">{{ movie.sinopsis }}</td>
           <td><img [src]="movie.img_promocional" alt="Imagen promocional" style="max-width: 100px;"></td>
           <td>{{ movie.formato }}</td>
           <td>{{ movie.duracion }} min</td>
@@ -87,26 +87,29 @@
     <table class="movie-table">
       <thead>
         <tr>
-          <th id="user">Id Usuario</th>
+          <th>ID Reserva</th>
+          <th>ID Usuario</th>
           <th>Película</th>
           <th>Sala</th>
           <th>Silla</th>
-          <th>Cantidad boletas</th>
-          <th>Valor total</th>
-          <th>ID reserva</th>
-          <th>Estado reserva</th>
+          <th>Horario</th>
+          <th>Estado</th>
+          <th>Administrar</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let booking of bookings">
-          <td>{{ booking.FK_identificacion }}</td>
-          <td>{{ getMovieTitle(booking.FK_idpelicula) }}</td>
-          <td>{{ booking.nombre_sala }}</td>
-          <td>{{ booking.nombre_silla }}</td>
-          <td>{{ booking.cantidad }}</td>
-          <td>{{ calculateTotalValue(booking) }}.000$</td>
           <td>{{ booking.id_reserva }}</td>
-          <td>{{ getStatusLabel(booking.estado) }}</td>
+          <td>{{ booking.FK_identificacion }}</td>
+          <td>{{ booking.FK_idpelicula }}</td>
+          <td>{{ booking.FK_idsala }}</td>
+          <td>{{ booking.id_silla }}</td>
+          <td>{{ booking.horario }}:00 pm</td>
+          <td>
+            <span *ngIf="booking.estado === 1">Activa</span>
+            <span *ngIf="booking.estado === 0">Cancelada</span>
+          </td>
+          <td><button>Cancelar reserva</button></td>
         </tr>
       </tbody>
     </table>

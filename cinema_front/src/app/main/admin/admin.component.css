@@ -1,3 +1,7 @@
+h2{
+  text-align: center;
+  margin: 50px auto;
+}
 .table-wrapper{
 margin: auto 5%;
 }
@@ -49,4 +53,7 @@ padding: 10px 20px;
 display: block;
 margin: auto;
 cursor: pointer;
+}
+.sinopsis{
+  text-align: justify !important;
 }

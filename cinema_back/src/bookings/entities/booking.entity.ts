@@ -17,6 +17,9 @@ export class Booking {
   id_silla: number;
 
   @Column()
-  estado: boolean;
+  horario: string;
+
+  @Column()
+  estado: number;
 }
 

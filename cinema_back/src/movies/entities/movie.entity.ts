@@ -17,7 +17,7 @@ export class MovieEntity {
     img_promocional: string;
     @Column({ type: 'int' })
     precio: number;
-    @Column({ type: 'varchar', length: 30 })
+    @Column({ type: 'varchar', length: 50 })
     horario: string;
     @Column({ type: 'int' })
     id_genero: number;
