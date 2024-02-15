@@ -18,7 +18,8 @@ export class UsersService {
     if (user && await bcrypt.compareSync(pass, user.contrasena)) {
       return {
         'rol': user.rol,
-        'nombre': user.nombre
+        'nombre': user.nombre,
+        'correo': user.correo
       };
     }
     return null;

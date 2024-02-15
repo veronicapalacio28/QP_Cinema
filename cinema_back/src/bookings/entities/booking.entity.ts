@@ -8,6 +8,9 @@ export class Booking {
   FK_identificacion: number;
 
   @Column()
+  correo: string;
+
+  @Column()
   FK_idpelicula: number;
 
   @Column()

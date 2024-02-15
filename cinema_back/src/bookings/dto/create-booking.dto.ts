@@ -5,6 +5,8 @@ export class CreateBookingDto {
   @IsNotEmpty()
   FK_identificacion: number;
   @IsNotEmpty()
+  correo: string;
+  @IsNotEmpty()
   FK_idpelicula: number;
   @IsNotEmpty()
   FK_idsala: number;

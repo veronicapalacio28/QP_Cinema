@@ -89,6 +89,7 @@
         <tr>
           <th>ID Reserva</th>
           <th>ID Usuario</th>
+          <th>Correo</th>
           <th>Película</th>
           <th>Sala</th>
           <th>Silla</th>
@@ -101,6 +102,7 @@
         <tr *ngFor="let booking of bookings">
           <td>{{ booking.id_reserva }}</td>
           <td>{{ booking.FK_identificacion }}</td>
+          <td>{{ booking.correo }}</td>
           <td>{{ booking.FK_idpelicula }}</td>
           <td>{{ booking.FK_idsala }}</td>
           <td>{{ booking.id_silla }}</td>

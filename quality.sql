@@ -131,11 +131,12 @@ INSERT INTO `silla` (`id_silla`, `nombre_silla`) VALUES
 CREATE TABLE `reserva` (
   `id_reserva` int(11) NOT NULL,
   `FK_identificacion` int(11) DEFAULT NULL,
+  `correo` varchar(50) DEFAULT NULL,
   `FK_idpelicula` int(11) DEFAULT NULL,
   `FK_idsala` int(11) DEFAULT NULL,
   `id_silla` int(11) DEFAULT NULL,
-  `horario` varchar(10) DEFAULT NULL,
-  `estado` bit(1) DEFAULT NULL
+  `horario` varchar(20) DEFAULT NULL,
+  `estado` int(11)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 -- Volcado de datos para la tabla reserva
 -- --------------------------------------------------------
@@ -181,3 +182,4 @@ ALTER TABLE `usuario` ADD CONSTRAINT `FK_7547e45d9640c110375a724600e` FOREIGN KE
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 SELECT * FROM reserva;
+SELECT * FROM usuario;
