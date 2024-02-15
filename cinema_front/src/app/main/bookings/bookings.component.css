@@ -1,17 +1,46 @@
-.table-wrapper{
+.table-wrapper {
   margin: auto 5%;
-  }
-  .movie-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+}
 
-  .movie-table th, .movie-table td {
-    border: 1px solid #000000;
-    padding: 8px;
-    text-align: center;
-  }
+.movie-table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  .movie-table th {
-    background-color: #f2f2f2;
-  }
+.movie-table th,
+.movie-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+.movie-table th {
+  background-color: #f2f2f2;
+}
+
+.not-bookings {
+  max-width: 1280px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.not-bookings button {
+  padding: 10px 20px;
+  border: solid 2px #222823;
+  font-size: 16px;
+  background: #222823;
+  color: #A7A2A9;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.not-bookings button:hover{
+  border: solid 2px #A7A2A9;
+  background: #A7A2A9;
+  color: #222823;
+}
+

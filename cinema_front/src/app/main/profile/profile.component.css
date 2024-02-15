@@ -1,0 +1,9 @@
+.information{
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  border: solid 2px #222823;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 100px ;
+}

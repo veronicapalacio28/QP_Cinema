@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { UserEmailService } from '../../services/user-email.service'; // Importa el servicio
+import { Router } from '@angular/router';
+import { UserEmailService } from '../../services/user-email.service';
 
 @Component({
   selector: 'app-bookings',
@@ -14,21 +15,23 @@ export class BookingsComponent implements OnInit {
   bookings: any[] = [];
   userEmail: string = '';
 
-  constructor(private http: HttpClient, private userEmailService: UserEmailService) { }
+  constructor(private http: HttpClient, private userEmailService: UserEmailService,private router: Router) { }
 
   ngOnInit(): void {
     this.getBookings();
-    // Obtén el correo electrónico del usuario del localStorage
     const usuarioString = localStorage.getItem('usuario');
-    if (usuarioString !== null) { // Verifica si usuarioString no es null
+    if (usuarioString !== null) {
       const usuario = JSON.parse(usuarioString);
       this.userEmail = usuario.correo;
     }
   }
+
   getBookings() {
     this.http.get<any[]>('http://localhost:3000/bookings').subscribe(data => {
-      this.bookings = data;
+      this.bookings = data.filter(booking => booking.correo === this.userEmail);
     });
   }
-
+  navegar(ruta: string): void {
+    this.router.navigate([ruta]);
+  }
 }

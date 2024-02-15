@@ -1,25 +1,22 @@
 <h1>Mis Reservas</h1>
 
 <section class="movies-list">
-  <div class="table-wrapper">
+  <div class="table-wrapper" *ngIf="bookings.length > 0">
     <table class="movie-table">
       <thead>
         <tr>
           <th>ID Reserva</th>
-          <th>ID Usuario</th>
           <th>Correo</th>
           <th>Película</th>
           <th>Sala</th>
           <th>Silla</th>
           <th>Horario</th>
           <th>Estado</th>
-
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let booking of bookings">
           <td>{{ booking.id_reserva }}</td>
-          <td>{{ booking.FK_identificacion }}</td>
           <td>{{ booking.correo }}</td>
           <td>{{ booking.FK_idpelicula }}</td>
           <td>{{ booking.FK_idsala }}</td>
@@ -33,9 +30,9 @@
       </tbody>
     </table>
   </div>
+  <div class="not-bookings" *ngIf="bookings.length === 0">
+    <h2>Aún no has reservado</h2><br>
+    <p>Visita nuestra sección <strong><i>Cartelera</i></strong> y comienza a disfrutar de nuestras películas</p>
+    <button (click)="navegar('/cinema/movies')">Ver cartelera</button>
+  </div>
 </section>
-
-
-
-<p>Correo electrónico: {{ userEmail }}</p>
-

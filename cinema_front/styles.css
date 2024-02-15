@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Lato,sans-serif;
+  font-family: 'Lato';
 }
 h1 {
   font-size: 36px;
@@ -12,29 +12,22 @@ h1 {
   text-align: center;
   color: #08090A;
 }
-
 h2 {
   font-size: 30px;
 }
-
 h3 {
   font-size: 2em;
 }
-
 p {
   font-size: 1.25em;
   text-align: justify;
 }
-
 ul {
   list-style: none;
 }
-
 li {
   font-size: 1.25em;
 }
-
-
 .custom-snackbar {
   font-size: 1.2rem;
 }
@@ -42,7 +35,6 @@ li {
 body{
   background-color: #F4F7F5;
 }
-
 .login-body-class {
   background-image: url(./assets/imgs/fondo.jpg);
   background-size: cover;
@@ -50,7 +42,6 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
-
 .register-body-class {
   background-image: url(./assets/imgs/fondo.jpg);
   background-size: cover;

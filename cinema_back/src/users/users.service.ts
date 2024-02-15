@@ -19,7 +19,9 @@ export class UsersService {
       return {
         'rol': user.rol,
         'nombre': user.nombre,
-        'correo': user.correo
+        'correo': user.correo,
+        'apellido': user.apellido,
+        'identificacion': user.identificacion
       };
     }
     return null;

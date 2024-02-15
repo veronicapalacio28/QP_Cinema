@@ -12,6 +12,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   {
     path: '', component: CinemaComponent, children: [
@@ -20,7 +21,7 @@ const routes: Routes = [
       { path: 'movies/:id', component: MovieDetailComponent },
       { path: 'bookings', component: BookingsComponent },
       { path: 'admin', component: AdminComponent },
-
+      { path: 'profile', component: ProfileComponent },
     ]
   },
 ];
