@@ -13,6 +13,11 @@
     <br>
     <p><strong>Precio: </strong>{{movieDetails.precio}}.000$</p>
     <br>
-    <p><strong>Horarios: </strong>{{movieDetails.horario}}</p>
+    <label for="horario"><strong>Horario:</strong></label>
+    <select id="horario" [(ngModel)]="selectedHour">
+      <option *ngFor="let hour of getHoursList()" [value]="hour">{{ hour }}:00pm</option>
+    </select>
   </div>
 </section>
+<div>
+</div>

@@ -21,12 +21,14 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     var usuarioString = localStorage.getItem('usuario');
     if (usuarioString !== null) {
-      const usuario = JSON.parse(usuarioString);
+      var usuario = JSON.parse(usuarioString);
       this.identificacion = usuario.identificacion;
       this.nombre = usuario.nombre;
       this.apellido = usuario.apellido;
       this.correo = usuario.correo;
-      this.rol = usuario.rol;
+      if (usuario.rol==2){
+        this.rol="Administrador"
+      }
     }
   }
 }

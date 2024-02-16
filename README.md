@@ -79,7 +79,7 @@
 - [x] Imagen promocional.
 - [x] Formato (3D o 2D).
 - [x] Duración.
-- [ ] Horarios disponibles, debe ser una lista desplegable, los horarios disponibles serán siempre 12pm, 3pm, 6pm, 9pm.
+- [x] Horarios disponibles, debe ser una lista desplegable, los horarios disponibles serán siempre 12pm, 3pm, 6pm, 9pm.
 - [x] Valor de la boleta.
 - [ ] Al seleccionar el horario de preferencia y presionar el botón Reservar, se presentará una ventana con la vista de las sillas disponibles, el usuario podrá seleccionar las sillas de su preferencia. Cada vez que seleccione o deseleccione un asiento, se verá un cambio en un texto que indica la cantidad de boletas y el valor total de la reserva (cantidad de boletas x valor de la boleta).
 - [ ] Para finalizar debe dar en el botón guardar, la ventana emergente se cerrará en este momento y la información de la reserva se cargará a la lista de reservas del usuario. Se deberá enviar un correo electrónico con el detalle de la reserva.
@@ -102,13 +102,13 @@
 
 <p>Al ingresar a la funcionalidad "Administrar películas" se abrirá una pantalla que presente un botón "Adicionar película", al dar click en dicho botón, se abrirá una ventana emergente mediante la cual el usuario podrá ingresar la siguiente información:</p>
 
-- [ ] Título
-- [ ] Género
-- [ ] Sinópsis
-- [ ] Imagen promocional
-- [ ] Formato (3D o 2D)
-- [ ] Duración
-- [ ] Valor de la boleta
+- [x] Título
+- [x] Género
+- [x] Sinópsis
+- [x] Imagen promocional
+- [x] Formato (3D o 2D)
+- [x] Duración
+- [x] Valor de la boleta
 
 <p>Al ingresar a la funcionalidad "Administrar películas" y presionar el botón "Editar película" de alguna película, se abrirá una ventana emergente que permitirá al usuario modificar la siguiente información de dicho producto:</p>
 

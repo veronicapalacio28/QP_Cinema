@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MoviesService } from '../../services/movies.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'; // Importa FormsModule
 
 @Component({
   selector: 'app-movie-detail',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,FormsModule ],
   templateUrl: './movie-detail.component.html',
-  styleUrl: './movie-detail.component.css'
+  styleUrls: ['./movie-detail.component.css'] // Usa styleUrls en lugar de styleUrl
 })
 export class MovieDetailComponent implements OnInit {
   movieId!: string;
   movieDetails: any;
-
+  selectedHour: string = '';
   constructor(
     private route: ActivatedRoute,
     private moviesService: MoviesService
@@ -20,6 +22,7 @@ export class MovieDetailComponent implements OnInit {
 
   ngOnInit() {
     this.movieId = this.route.snapshot.paramMap.get('id') || '';
+    this.selectedHour = this.getHoursList()[0];
     console.log('movieee', this.movieId)
     try {
       this.moviesService.getMovieById(this.movieId).subscribe(
@@ -57,5 +60,11 @@ export class MovieDetailComponent implements OnInit {
       default:
         return 'Desconocido';
     }
+  }
+  getHoursList(): string[] {
+    if (!this.movieDetails || !this.movieDetails.horario) {
+      return [];
+    }
+    return this.movieDetails.horario.split('-');
   }
 }
