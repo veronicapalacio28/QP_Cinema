@@ -135,30 +135,33 @@
 </ul>			
 
  ## Películas para crear
-{"titulo":"Aquaman",
-"sinopsis":"Después de no lograr vencer a Aquaman la primera vez, Black Manta, aún impulsado por la necesidad de vengar la muerte de su padre, no escatimará esfuerzos para derrotar de una vez por todas a Aquaman. Esta vez, Black Manta es más temible que nunca, empuñando el poder del mítico Tridente Negro, que libera un antiguo y malévolo poder. Para vencerlo, Aquaman recurrirá a su hermano encarcelado Orm, el antiguo Rey de Atlantis, para forjar una alianza inesperada. Juntos, deberán dejar de lado sus diferencias para proteger su reino, salvar a la familia de Aquaman y al mundo de una destrucción inevitable.",
-"formato":"3D",
-"duracion":115,
-"img_promocional":"https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/1/4/4/9/49441-1-esl-CO/4a01e94b2e5f-480x670.jpg",
-"precio":17,
-"horario":"3:00pm-9:00pm",
-"id_genero":5}
+ 
+<p><strong>Título:</strong> Aquaman.</p>
+<p><strong>Sinopsis:</strong> Después de no lograr vencer a Aquaman la primera vez, Black Manta, aún impulsado por la necesidad de vengar la muerte de su padre, no escatimará esfuerzos para derrotar de una vez por todas a Aquaman. Esta vez, Black Manta es más temible que nunca, empuñando el poder del mítico Tridente Negro, que libera un antiguo y malévolo poder. Para vencerlo, Aquaman recurrirá a su hermano encarcelado Orm, el antiguo Rey de Atlantis, para forjar una alianza inesperada. Juntos, deberán dejar de lado sus diferencias para proteger su reino, salvar a la familia de Aquaman y al mundo de una destrucción inevitable.</p>
+<p><strong>Formato:</strong> 3D.</p>
+<p><strong>Duración:</strong> 115.</p>
+<p><strong>Imágen promocional:</strong> https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/1/4/4/9/49441-1-esl-CO/4a01e94b2e5f-480x670.jpg.</p>
+<p><strong>Precio:</strong> 17.</p>
+<p><strong>Horario:</strong> 3-9.</p>
+<p><strong>ID Género:</strong> 5.</p>
+<br>
+<p><strong>Título:</strong> El paseo 7.</p>
+<p><strong>Sinopsis:</strong> ¿Se está perdiendo la tradición colombiana del paseo de olla? Dos ingenuos documentalistas deciden aventurarse y acompañar a la familia Cabello, para descubrir, en un caótico paseo, por qué no hay nadie en la familia que se pierda el plan al lado del río. Competir sobre neumáticos, clavar desde las piedras,bailar champeta y comer sancocho de gallina. Para que este documental sea completo, no deje de ver El Paseo 7, el paseode olla, y ayude a que la tradición perdure para siempre.</p>
+<p><strong>Formato:</strong> 2D.</p>
+<p><strong>Duración:</strong> 88.</p>
+<p><strong>Imágen promocional:</strong> https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/6/2/6/1/51626-1-esl-CO/4b445a37e8db-480x670.png.</p>
+<p><strong>Precio:</strong> 12.</p>
+<p><strong>Horario:</strong> 3-9.</p>
+<p><strong>ID Género:</strong> 1.</p>
+<br>
+<p><strong>Título:</strong> Wonka.</p>
+<p><strong>Sinopsis:</strong> Basada en el extraordinario personaje central de Charlie y la Fábrica de Chocolate, el libro infantil más icónico de Roald Dahl y uno de los libros infantiles más vendidos de todos los tiempos, Wonka cuenta la maravillosa historia de cómo el más grande inventor, mago y fabricante de chocolates del mundo se convirtió en el querido Willy Wonka que conocemos hoy en día.</p>
+<p><strong>Formato:</strong> 3D.</p>
+<p><strong>Duración:</strong> 117.</p>
+<p><strong>Imágen promocional:</strong> https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/5/9/8/5/45895-7-esl-CO/7c81efc87689-warner_wonka_cinecol_480x670.jpg.</p>
+<p><strong>Precio:</strong> 17.</p>
+<p><strong>Horario:</strong> 6</p>
+<p><strong>ID Género:</strong> 1.</p>
 
-{"titulo":"El paseo 7",
-"sinopsis":"¿Se está perdiendo la tradición colombiana del paseo de olla? Dos ingenuos documentalistas deciden aventurarse y acompañar a la familia Cabello, para descubrir, en un caótico paseo, por qué nohay nadie en la familia que se pierda el plan al lado del río. Competir sobre neumáticos, clavar desde las piedras,bailar champeta y comer sancocho de gallina. Para que este documental sea completo, no deje de ver El Paseo 7, el paseode olla, y ayude a que la tradición perdure para siempre.",
-"formato":"2D",
-"duracion":88,
-"img_promocional":"https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/6/2/6/1/51626-1-esl-CO/4b445a37e8db-480x670.png",
-"precio":12,
-"horario":"3:00pm-9:00pm",
-"id_genero":1}
-
-{"titulo":"Wonka",
-"sinopsis":"Basada en el extraordinario personaje central de Charlie y la Fábrica de Chocolate, el libro infantil más icónico de Roald Dahl y uno de los libros infantiles más vendidos de todos los tiempos, Wonka cuenta la maravillosa historia de cómo el más grande inventor, mago y fabricante de chocolates del mundo se convirtió en el querido Willy Wonka que conocemos hoy en día.",
-"formato":"3D",
-"duracion":117,
-"img_promocional":"https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster/5/9/8/5/45895-7-esl-CO/7c81efc87689-warner_wonka_cinecol_480x670.jpg",
-"precio":17,
-"horario":"6:00pm",
-"id_genero":1
-}
+## Lineamientos del proyecto
+<p><strong>Paleta de colores usada:</strong> <a href="https://coolors.co/08090a-a7a2a9-f4f7f5-575a5e-222823">#08090a-#a7a2a9-#f4f7f5-#575a5e-#222823</a>

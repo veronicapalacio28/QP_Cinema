@@ -36,7 +36,22 @@
   font-size: 18px;
   margin-left: 10px;
 }
-
+button{
+  display: block;
+  margin: 50px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: solid 2px #222823;
+  border-radius: 10px;
+  background-color: #222823;
+  color: #A7A2A9;
+  font-weight: bold;
+}
+button:hover{
+  border: solid 2px #222823;
+  background-color: #A7A2A9;
+  color: #222823;
+}
 
 @media screen and (max-width: 900px) {
 }

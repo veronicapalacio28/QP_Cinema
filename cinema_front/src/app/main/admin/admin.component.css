@@ -1,28 +1,31 @@
-h2{
+h2 {
   text-align: center;
   margin: 50px auto;
 }
-.table-wrapper{
-margin: auto 5%;
+
+.table-wrapper {
+  margin: auto 5%;
 }
+
 .movie-table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.movie-table th, .movie-table td {
-  border: 1px solid #000000;
+.movie-table th,
+.movie-table td {
+  border: 2px solid #08090A;
   padding: 8px;
   text-align: center;
 }
 
 .movie-table th {
-  background-color: #f2f2f2;
+  background-color: #F4F7F5;
 }
 
-.add-movie  form{
+.add-movie form {
   display: block;
-  border: solid 2px #000000;
+  border: solid 2px #08090A;
   border-radius: 10px;
   max-width: 720px;
   margin: auto;
@@ -30,30 +33,48 @@ margin: auto 5%;
 
 }
 
-.add-movie  form div{
-display: flex;
-margin: auto;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin: 20px auto;
+.add-movie form div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+
 }
-.add-movie  form div input{
+
+.add-movie form div input {
   width: 80%;
-height: 25px;
+  height: 25px;
+  padding: 10px;
+  font-size: 17px;
+  border: solid 2px #08090A;
+  border-radius: 10px;
 }
-.add-movie  form div textarea{
+
+.add-movie form div textarea {
   width: 80%;
   max-width: 80%;
   min-width: 80%;
 }
 
-.add-movie  form button{
-padding: 10px 20px;
-display: block;
-margin: auto;
-cursor: pointer;
+
+#genero,
+#formato {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid #08090A;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #08090A;
 }
-.sinopsis{
+.add-movie form button {
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.sinopsis {
   text-align: justify !important;
 }

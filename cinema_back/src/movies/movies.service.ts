@@ -18,8 +18,8 @@ export class MoviesService {
     newMovie.duracion = createMovieDto.duracion;
     newMovie.img_promocional = createMovieDto.img_promocional;
     newMovie.precio = createMovieDto.precio;
-    newMovie.horario=createMovieDto.horario;
-    newMovie.id_genero=createMovieDto.id_genero;
+    newMovie.horario = createMovieDto.horario;
+    newMovie.id_genero = createMovieDto.id_genero;
 
     await this.moviesRepository.save(newMovie);
     return { message: 'Pelicula creada' };

@@ -5,16 +5,15 @@
   justify-content: center;
   border-radius: 10px;
   max-width: 1600px;
-
 }
-
 .hero img {
   border-radius: 20px;
   width: 100%;
 }
 
 h2 {
-  margin-top: 10px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 /* billboard */

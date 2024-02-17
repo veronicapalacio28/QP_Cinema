@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0080FF80;
+    background-color: #22282380;
     border-radius: 20px;
 }
 
@@ -37,7 +37,7 @@
 
 .register-login div button:hover {
     background-color: #FFFFFF !important;
-    color: #0080FF80;
+    color: #22282380;
 }
 
 .register-register {
@@ -54,7 +54,7 @@
 .register-register form h2 {
     font-size: 30px;
     text-align: center;
-    color: #0000FF;
+    color: #222823;
 }
 
 .register-register form input,
@@ -77,9 +77,9 @@
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px 40px;
-    border: solid 2px #0000FF;
+    border: solid 2px #222823;
     font-size: 16px;
-    background: #0000FF;
+    background: #222823;
     color: #FFFFFF;
     cursor: pointer;
     outline: none;
@@ -89,8 +89,8 @@
 
 .register-register form button:hover {
     background: #FFFFFF;
-    color: #0000FF;
-    border: solid 2px #0000FF;
+    color: #222823;
+    border: solid 2px #222823;
 
 }
 
