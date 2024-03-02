@@ -1,0 +1,36 @@
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.seat {
+  padding: 2px;
+  text-align: center;
+}
+
+.seat-col {
+  margin: 0px;
+  text-align: center;
+}
+
+.seat img {
+  max-width: 50px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+h2 {
+  display: block;
+  margin: 20px;
+}
+
+.info-book{
+  display: flex;
+  justify-content: center;
+  margin: auto 20px;
+}

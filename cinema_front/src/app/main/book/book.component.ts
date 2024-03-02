@@ -1,21 +1,30 @@
+import { MoviesService } from '../../services/movies.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MoviesService } from '../../services/movies.service';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Importa FormsModule
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-movie-detail',
+  selector: 'app-book',
   standalone: true,
-  imports: [CommonModule,FormsModule ],
-  templateUrl: './movie-detail.component.html',
-  styleUrls: ['./movie-detail.component.css'] // Usa styleUrls en lugar de styleUrl
+  imports: [CommonModule, FormsModule], // Agregar FontAwesomeModule aquí
+  templateUrl: './book.component.html',
+  styleUrls: ['./book.component.css'] // Corregir el nombre de la propiedad de estilos
 })
-export class MovieDetailComponent implements OnInit {
+export class BookComponent implements OnInit {
   movieId!: string;
   movieDetails: any;
   selectedHour: string = '';
+  rows = [
+    ['A1', 'A2', 'A3', 'A4'],
+    ['B1', 'B2', 'B3', 'B4'],
+    ['C1', 'C2', 'C3', 'C4'],
+    ['D1', 'D2', 'D3', 'D4']
+];
+
+
+
   constructor(
     private route: ActivatedRoute,
     private moviesService: MoviesService,
@@ -39,6 +48,7 @@ export class MovieDetailComponent implements OnInit {
       console.error(error);
     }
   }
+
   getGenreName(idGenero: number): string {
     switch (idGenero) {
       case 1:
@@ -63,13 +73,11 @@ export class MovieDetailComponent implements OnInit {
         return 'Desconocido';
     }
   }
+
   getHoursList(): string[] {
     if (!this.movieDetails || !this.movieDetails.horario) {
       return [];
     }
     return this.movieDetails.horario.split('-');
-  }
-  movieBook(id: string) {
-    this.router.navigate(['cinema/movies', id, 'book']);
   }
 }

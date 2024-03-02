@@ -13,12 +13,14 @@ import { BookingsComponent } from './bookings/bookings.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BookComponent } from './book/book.component';
 const routes: Routes = [
   {
     path: '', component: CinemaComponent, children: [
       { path: 'home', component: HomeComponent },
       { path: 'movies', component: MoviesComponent },
       { path: 'movies/:id', component: MovieDetailComponent },
+      { path: 'movies/:id/book', component: BookComponent },
       { path: 'bookings', component: BookingsComponent },
       { path: 'admin', component: AdminComponent },
       { path: 'profile', component: ProfileComponent },

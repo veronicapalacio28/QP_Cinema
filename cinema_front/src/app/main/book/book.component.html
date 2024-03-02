@@ -1,3 +1,16 @@
+<h1>Elige tus asientos</h1>
+<div class="seat-container">
+  <div class="seat-row" *ngFor="let row of rows">
+      <div class="seat" *ngFor="let seat of row">
+          <img src="../../../assets/imgs/asiento_cine.png" alt="Asiento de cine">
+      </div>
+  </div>
+</div>
+
+<div class="info-book">
+  <p>Recuerda que tu película es: <strong><i>{{movieDetails.titulo}}</i></strong>, en formato <strong><i>{{movieDetails.formato}}</i></strong></p>
+</div>
+<!--
 <h1>{{movieDetails.titulo}}</h1>
 <section class="movie-details">
   <img [src]="movieDetails.img_promocional" alt="{{ movieDetails.titulo }} Poster">
@@ -14,11 +27,8 @@
     <p><strong>Precio: </strong>{{movieDetails.precio}}.000$</p>
     <br>
     <label for="horario"><strong>Horario:</strong></label>
-    <select id="horario" [(ngModel)]="selectedHour">
-      <option *ngFor="let hour of getHoursList()" [value]="hour">{{ hour }}:00pm</option>
-    </select>
-    <button (click)="movieBook(movieDetails.id)">Reserva ahora</button>
+    <button>Reserva ahora</button>
   </div>
 </section>
-<div>
-</div>
+-->
+

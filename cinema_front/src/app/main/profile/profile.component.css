@@ -13,3 +13,9 @@ text-align: center;
 .information p{
 margin: 10px;
 }
+
+img{
+  max-width: 200px;
+  display: flex;
+  margin: 0px auto 20px auto;
+}

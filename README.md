@@ -41,7 +41,6 @@
   <li>git clean -fd</li>
 </ul>
 
-
 ## Requerimientos del proyecto
 <p>Al ingresar al sitio, se tendrá tendrá una pantalla con el Login (usuario y contraseña), además un botón "Registrarme", al dar click en este botón aparecerá una ventana emergente que solicitará la siguiente información:</p>
 

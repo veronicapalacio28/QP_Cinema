@@ -11,7 +11,6 @@ mat-toolbar {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #000000;
   width: 100%;
   height: 100%;
   margin: 0 50px;
@@ -52,7 +51,7 @@ mat-toolbar {
   padding: 10px 20px;
   border: solid 2px #222823;
   font-size: 16px;
-  background:#222823;
+  background: #222823;
   color: #A7A2A9;
   cursor: pointer;
   outline: none;
@@ -77,4 +76,37 @@ mat-toolbar {
 
 .right-buttons button:hover {
   cursor: pointer;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 900px) {
+  .container {
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    margin: auto;
+    padding: 0;
+  }
+  img{
+    display: flex !important;
+    align-items: center !important;
+    margin: auto;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navigation-buttons button{
+    margin: 10px auto;
+  }
+
+  .right-buttons {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
 }

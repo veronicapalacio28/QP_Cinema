@@ -23,6 +23,10 @@ h2 {
   background-color: #F4F7F5;
 }
 
+.add-movie {
+  background-color: #F4F7F5;
+  margin: 20px;
+}
 .add-movie form {
   display: block;
   border: solid 2px #08090A;
@@ -30,7 +34,7 @@ h2 {
   max-width: 720px;
   margin: auto;
   padding: 50px;
-
+  background-color: #F4F7F5;
 }
 
 .add-movie form div {
@@ -40,7 +44,6 @@ h2 {
   align-items: center;
   flex-direction: column;
   margin: 20px auto;
-
 }
 
 .add-movie form div input {
@@ -50,12 +53,22 @@ h2 {
   font-size: 17px;
   border: solid 2px #08090A;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .add-movie form div textarea {
   width: 80%;
   max-width: 80%;
   min-width: 80%;
+  padding: 10px;
+  border: 2px solid #08090A;
+  border-radius: 10px;
+}
+.add-movie form div select {
+  background-color:#F4F7F5;
+  padding: 10px;
+  border: 2px solid #08090A;
+  border-radius: 10px;
 }
 
 
