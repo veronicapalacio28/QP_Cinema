@@ -28,6 +28,8 @@ export class ProfileComponent implements OnInit {
       this.correo = usuario.correo;
       if (usuario.rol==2){
         this.rol="Administrador"
+      }else{
+        this.rol="Cliente"
       }
     }
   }
